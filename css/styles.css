@@ -1,15 +1,15 @@
 /* Base Styles */
 :root {
-    --primary-color: #9d4edd;
-    --secondary-color: #7b2cbf;
-    --accent-color: #c77dff;
-    --dark-bg: #10002b;
-    --dark-bg-secondary: #240046;
-    --card-bg: #3c096c;
-    --text-color: #e0aaff;
+    --primary-color: #7d1dab;
+    --secondary-color: #4e0188;
+    --accent-color: #9b22c8;
+    --dark-bg: #0a001a;
+    --dark-bg-secondary: #150025;
+    --card-bg: #2a0044;
+    --text-color: #d49aff;
     --text-light: #e9d8fd;
-    --border-color: #5a189a;
-    --shadow: 0 4px 15px rgba(157, 78, 221, 0.3);
+    --border-color: #3b0061;
+    --shadow: 0 4px 15px rgba(125, 29, 171, 0.3);
     --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -730,4 +730,63 @@ section::after {
         width: 100%;
         padding-left: 70px;
     }
+}
+
+/* Education Card Styling */
+.education-card {
+    display: flex;
+    background: rgba(42, 0, 68, 0.5);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin: 2rem 0;
+    border: 1px solid rgba(125, 29, 171, 0.2);
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+    padding: 1.5rem;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    background: rgba(42, 0, 68, 0.7);
+    border: 1px solid rgba(125, 29, 171, 0.4);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.education-icon {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-icon i {
+    transition: var(--transition);
+}
+
+.education-card:hover .education-icon i {
+    transform: scale(1.1);
+    color: var(--primary-color);
+    text-shadow: 0 0 15px rgba(125, 29, 171, 0.6);
+}
+
+.education-details {
+    flex: 1;
+}
+
+.education-details h3 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.university {
+    padding-left: 0.5rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+.university h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 } 
