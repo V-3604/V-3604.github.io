@@ -120,59 +120,217 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-content">
+            
+            <!-- JobHunter Project -->
+            <div class="project-expanded">
+                <div class="project-header">
+                    <div class="project-title">
                         <div class="project-icon"><i class="fas fa-search-dollar"></i></div>
                         <h3>JobHunter</h3>
-                        <p class="project-description">Advanced AI Job Search Package that extracts, processes, and clusters job listings using Google Custom Search API and OpenAI embeddings.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>OpenAI</span>
-                            <span>Vector Search</span>
-                            <span>Google API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> View Code</a>
-                            <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-content">
+                
+                <div class="project-description">
+                    <p>A comprehensive Python package for collecting, processing, and managing job listings using AI-powered tools to cluster similar positions, generate descriptions, verify active listings, and provide advanced search capabilities.</p>
+                </div>
+                
+                <div class="project-details">
+                    <div class="project-architecture">
+                        <h4>Architecture</h4>
+                        <div class="architecture-diagram">
+                            <div class="arch-component main-component">
+                                <span>JobHunter API</span>
+                                <div class="arch-connections">
+                                    <div class="arch-subcomponent">
+                                        <span>MongoDB Service</span>
+                                        <small>Database operations</small>
+                                    </div>
+                                    <div class="arch-subcomponent">
+                                        <span>OpenAI Service</span>
+                                        <small>AI processing</small>
+                                    </div>
+                                    <div class="arch-subcomponent">
+                                        <span>Search Service</span>
+                                        <small>Search functionality</small>
+                                    </div>
+                                    <div class="arch-subcomponent">
+                                        <span>Collector Service</span>
+                                        <small>Job collection</small>
+                                    </div>
+                                    <div class="arch-subcomponent">
+                                        <span>Process Service</span>
+                                        <small>Core processing logic</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Job Collection from multiple sources via Google Custom Search</li>
+                            <li><i class="fas fa-check-circle"></i> AI-powered processing with OpenAI for structured data extraction</li>
+                            <li><i class="fas fa-check-circle"></i> Automatic clustering of similar job listings with AI descriptions</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced search with vector embeddings and text matching</li>
+                            <li><i class="fas fa-check-circle"></i> Intelligent verification system with tiered checking</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>MongoDB</span>
+                    <span>OpenAI</span>
+                    <span>Google API</span>
+                    <span>Vector Search</span>
+                    <span>Web Scraping</span>
+                    <span>Data Processing</span>
+                </div>
+            </div>
+            
+            <!-- RepoMind Project -->
+            <div class="project-expanded">
+                <div class="project-header">
+                    <div class="project-title">
                         <div class="project-icon"><i class="fas fa-code-branch"></i></div>
                         <h3>RepoMind</h3>
-                        <p class="project-description">Natural language interface for code repository exploration, enabling developers to query and understand codebases using conversational language.</p>
-                        <div class="project-tech">
-                            <span>FastAPI</span>
-                            <span>NLP</span>
-                            <span>MongoDB</span>
-                            <span>LLMs</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    <p>A natural language interface for code repository exploration that enables developers to query and understand codebases using conversational language, with support for loading repositories from multiple sources.</p>
+                </div>
+                
+                <div class="project-details">
+                    <div class="project-architecture">
+                        <h4>System Architecture</h4>
+                        <div class="architecture-flex">
+                            <div class="arch-side">
+                                <h5>Backend Components</h5>
+                                <ul class="arch-list">
+                                    <li><i class="fas fa-brain"></i> LLM Client (OpenAI)</li>
+                                    <li><i class="fas fa-database"></i> MongoDB Integration</li>
+                                    <li><i class="fas fa-search"></i> Query Processor</li>
+                                    <li><i class="fas fa-folder"></i> Repository Manager</li>
+                                    <li><i class="fas fa-code"></i> Code Analyzer</li>
+                                </ul>
+                            </div>
+                            <div class="arch-side">
+                                <h5>Frontend Components</h5>
+                                <ul class="arch-list">
+                                    <li><i class="fas fa-window-maximize"></i> Web Interface (FastAPI)</li>
+                                    <li><i class="fas fa-comments"></i> Interactive Chat</li>
+                                    <li><i class="fas fa-sitemap"></i> Repository Browser</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="project-links">
-                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> View Code</a>
-                            <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                    
+                    <div class="project-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Natural language queries about codebases</li>
+                            <li><i class="fas fa-check-circle"></i> Automatic repository analysis and structure extraction</li>
+                            <li><i class="fas fa-check-circle"></i> Support for GitHub, ZIP files, and local directories</li>
+                            <li><i class="fas fa-check-circle"></i> Interactive chat interface for code exploration</li>
+                            <li><i class="fas fa-check-circle"></i> Component detection and relationship mapping</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>FastAPI</span>
+                    <span>MongoDB</span>
+                    <span>OpenAI</span>
+                    <span>NLP</span>
+                    <span>HTML/CSS/JS</span>
+                    <span>Code Analysis</span>
+                </div>
+            </div>
+            
+            <!-- MAPS Project -->
+            <div class="project-expanded">
+                <div class="project-header">
+                    <div class="project-title">
+                        <div class="project-icon"><i class="fas fa-robot"></i></div>
+                        <h3>MAPS</h3>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn project-btn"><i class="fab fa-github"></i> View Code</a>
+                        <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    <p>Multi-Agent Processing System (MAPS) is a conversational framework for data cleaning, analysis, and visualization that maintains context across multiple interactions using specialized agents for different aspects of the data workflow.</p>
+                </div>
+                
+                <div class="project-details">
+                    <div class="project-architecture">
+                        <h4>Agent Architecture</h4>
+                        <div class="agent-diagram">
+                            <div class="agent-container">
+                                <div class="agent orchestrator">
+                                    <i class="fas fa-chess-king"></i>
+                                    <span>Orchestrator Agent</span>
+                                    <small>Routes requests & coordinates workflow</small>
+                                </div>
+                                <div class="agent-connections">
+                                    <div class="agent data-engineer">
+                                        <i class="fas fa-table"></i>
+                                        <span>Data Engineer Agent</span>
+                                        <small>Data loading, cleaning & transformation</small>
+                                    </div>
+                                    <div class="agent viz-specialist">
+                                        <i class="fas fa-chart-bar"></i>
+                                        <span>Visualization Specialist Agent</span>
+                                        <small>Creates & customizes visualizations</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-components">
+                        <h4>Core Components</h4>
+                        <div class="components-grid">
+                            <div class="component-item">
+                                <i class="fas fa-memory"></i>
+                                <h5>Memory System</h5>
+                                <p>Sophisticated storage with checkpointing, caching, and backup functionality</p>
+                            </div>
+                            <div class="component-item">
+                                <i class="fas fa-cogs"></i>
+                                <h5>Function Registry</h5>
+                                <p>Centralized registry for data processing and visualization functions</p>
+                            </div>
+                            <div class="component-item">
+                                <i class="fas fa-sitemap"></i>
+                                <h5>Workflow Engine</h5>
+                                <p>Executes sequences of operations with conditional paths</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <div class="project-icon"><i class="fas fa-robot"></i></div>
-                        <h3>MAPS</h3>
-                        <p class="project-description">Multi-Agent Processing System with dedicated data engineering and visualization agents for advanced data analysis workflows.</p>
-                        <div class="project-tech">
-                            <span>Multi-Agent</span>
-                            <span>Data Engineering</span>
-                            <span>Visualization</span>
-                            <span>Workflow Engine</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> View Code</a>
-                            <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                        </div>
-                    </div>
+                
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                    <span>Multi-Agent</span>
+                    <span>Data Processing</span>
+                    <span>Visualization</span>
                 </div>
             </div>
         </div>

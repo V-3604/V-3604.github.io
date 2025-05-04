@@ -789,4 +789,331 @@ section::after {
 .university h4 {
     font-weight: 600;
     margin-bottom: 0.5rem;
+}
+
+/* Expanded Project Styles */
+.project-expanded {
+    background: rgba(42, 0, 68, 0.5);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin-bottom: 3rem;
+    border: 1px solid rgba(125, 29, 171, 0.2);
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
+    padding: 2rem;
+}
+
+.project-expanded:hover {
+    border: 1px solid rgba(125, 29, 171, 0.4);
+    background: rgba(42, 0, 68, 0.6);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-title h3 {
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.project-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .project-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .project-links {
+        align-self: flex-start;
+    }
+}
+
+/* Architecture Diagrams */
+.architecture-diagram {
+    background: rgba(30, 0, 50, 0.5);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border: 1px solid rgba(125, 29, 171, 0.3);
+}
+
+.arch-component {
+    background: rgba(60, 9, 108, 0.6);
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main-component {
+    margin-bottom: 1.5rem;
+    position: relative;
+    border: 1px solid var(--accent-color);
+}
+
+.main-component::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1rem;
+    background: var(--accent-color);
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-component span {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.arch-connections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.arch-subcomponent {
+    background: rgba(42, 0, 68, 0.6);
+    border-radius: 8px;
+    padding: 0.8rem;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(125, 29, 171, 0.2);
+}
+
+.arch-subcomponent:hover {
+    transform: translateY(-3px);
+    background: rgba(42, 0, 68, 0.8);
+    border-color: var(--accent-color);
+}
+
+.arch-subcomponent span {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.arch-subcomponent small {
+    color: var(--text-light);
+    opacity: 0.8;
+    font-size: 0.875rem;
+}
+
+/* Architecture Flex Layout */
+.architecture-flex {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.arch-side {
+    flex: 1;
+    background: rgba(30, 0, 50, 0.5);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(125, 29, 171, 0.3);
+}
+
+.arch-side h5 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: var(--accent-color);
+}
+
+.arch-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.arch-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.7rem 1rem;
+    background: rgba(42, 0, 68, 0.6);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.arch-list li:hover {
+    transform: translateX(5px);
+    background: rgba(42, 0, 68, 0.8);
+}
+
+.arch-list li i {
+    color: var(--accent-color);
+}
+
+/* Project Features */
+.project-features ul {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.project-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1rem;
+    background: rgba(30, 0, 50, 0.5);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.project-features li:hover {
+    transform: translateX(5px);
+    background: rgba(30, 0, 50, 0.7);
+}
+
+.project-features li i {
+    color: var(--accent-color);
+}
+
+/* Agent Architecture Diagram */
+.agent-diagram {
+    background: rgba(30, 0, 50, 0.5);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border: 1px solid rgba(125, 29, 171, 0.3);
+}
+
+.agent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.agent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.2rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 220px;
+    transition: var(--transition);
+}
+
+.agent i {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.agent span {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.agent small {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+.orchestrator {
+    background: rgba(125, 29, 171, 0.3);
+    border: 1px solid var(--accent-color);
+    position: relative;
+}
+
+.orchestrator::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 1.5rem;
+    background: var(--accent-color);
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.orchestrator i {
+    color: var(--accent-color);
+}
+
+.agent-connections {
+    display: flex;
+    gap: 2rem;
+}
+
+.data-engineer, .viz-specialist {
+    background: rgba(60, 9, 108, 0.4);
+    border: 1px solid rgba(125, 29, 171, 0.2);
+}
+
+.data-engineer:hover, .viz-specialist:hover {
+    transform: translateY(-5px);
+    background: rgba(60, 9, 108, 0.6);
+    border-color: var(--accent-color);
+}
+
+/* Project Components Grid */
+.components-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.component-item {
+    background: rgba(30, 0, 50, 0.5);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid rgba(125, 29, 171, 0.2);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.component-item:hover {
+    transform: translateY(-5px);
+    background: rgba(30, 0, 50, 0.7);
+    border-color: var(--accent-color);
+}
+
+.component-item i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.component-item h5 {
+    margin-bottom: 0.8rem;
+    color: var(--text-color);
+}
+
+.component-item p {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    opacity: 0.9;
 } 
