@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varshith Gowda K | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Varshith Gowda K</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Varshith Gowda K</h1>
+            <h2>Data Science & AI Specialist</h2>
+            <p>Undergraduate Researcher | Machine Learning Engineer</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Data Science undergraduate at the University of Minnesota with extensive research experience in machine learning, AI systems, and data engineering. Specializing in deep learning architectures, multi-modal fusion, and natural language processing.</p>
+                    
+                    <h3>Education</h3>
+                    <p><strong>University of Minnesota – Twin Cities</strong><br>
+                    Bachelor of Science in Data Science<br>
+                    Expected Graduation: Spring 2027<br>
+                    Technical GPA: 3.2</p>
+                    
+                    <h3>Technical Skills</h3>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h4>Machine Learning/AI</h4>
+                            <p>Deep learning (PyTorch, TensorFlow), transformer architectures, LLMs, multi-modal fusion, NLP, reinforcement learning</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Data Science</h4>
+                            <p>Statistical modeling, time series forecasting, dimensionality reduction, clustering, feature engineering, quantitative analysis, hypothesis testing</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Software Engineering</h4>
+                            <p>Python, R, SQL, Java, C/C++, GPU optimization, API development</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>MLOps & Infrastructure</h4>
+                            <p>Distributed training, experiment tracking, data pipelines, version control, mixed precision, containerization, high-performance computing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Research Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Undergraduate Research Assistant</h3>
+                        <h4>Knowledge Computing Lab - University of Minnesota</h4>
+                        <p class="date">January 2025 – Present</p>
+                        <ul>
+                            <li>Developing a sophisticated solar flare prediction architecture integrating DenseNet121 backbones, bidirectional LSTM/GRU, and Transformer components for the SDO Benchmark dataset</li>
+                            <li>Implementing multi-modal fusion approaches combining magnetogram and multi-channel EUV data with advanced attention mechanisms</li>
+                            <li>Engineering temporal modeling components to capture complex flare dynamics across multiple timescales</li>
+                            <li>Co-authoring research paper targeted for the ACM SIGSPATIAL conference</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Undergraduate Research Assistant</h3>
+                        <h4>HumanAI - University of Minnesota</h4>
+                        <p class="date">January 2025 – Present</p>
+                        <ul>
+                            <li>Developed "JobHunter," an AI-powered job search system leveraging Google Custom Search API and OpenAI embeddings</li>
+                            <li>Created "AutoDS," an intelligent code generator matching natural language queries for automated data science workflows</li>
+                            <li>Engineered "RepoMind," a natural language interface for code repository exploration</li>
+                            <li>Implemented "MAPS" multi-agent framework with specialized data engineering and visualization agents</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>JobHunter</h3>
+                        <p class="project-description">Advanced AI Job Search Package that extracts, processes, and clusters job listings using Google Custom Search API and OpenAI embeddings.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenAI</span>
+                            <span>Vector Search</span>
+                            <span>Google API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> View Code</a>
+                            <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>RepoMind</h3>
+                        <p class="project-description">Natural language interface for code repository exploration, enabling developers to query and understand codebases using conversational language.</p>
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>NLP</span>
+                            <span>MongoDB</span>
+                            <span>LLMs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> View Code</a>
+                            <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>MAPS</h3>
+                        <p class="project-description">Multi-Agent Processing System with dedicated data engineering and visualization agents for advanced data analysis workflows.</p>
+                        <div class="project-tech">
+                            <span>Multi-Agent</span>
+                            <span>Data Engineering</span>
+                            <span>Visualization</span>
+                            <span>Workflow Engine</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> View Code</a>
+                            <a href="#" class="btn project-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>kvarshithgowda@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(763) 620-6070</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Minneapolis, MN</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Varshith Gowda K. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
